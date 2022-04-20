@@ -29,14 +29,17 @@ const poemData = {
     nem jovok mert itt vagyok.`
 }
 
-Poem.prototype.lang = "HUN"
+Poem.prototype.lang = "HUN" // így adunk hozzá kulcsot rendesen 
+
 const favouritePoemOfAndras = new Poem(poemData)
-//favouritePoemOfAndras.favBy = "Andras Ranki"
 
-//console.log(favouritePoemOfAndras.favBy);
+favouritePoemOfAndras.favBy = "Andras Ranki" // uj kulcs hozzarendelése az objecthez, de az eredetihez nem adja hozzá véglegesen
 
-/* console.log(favouritePoemOfAndras.lang);
+//console.log(favouritePoemOfAndras.favBy); // csak kiiratjuk az előzőt 
+
+console.log(favouritePoemOfAndras.lang);
 console.log(favouritePoemOfAndras.__proto__);
 console.log(Poem.prototype);
- */
-favouritePoemOfAndras.makePage() //itt hivjuk meg a makePage-t
+
+
+//favouritePoemOfAndras.makePage() //itt hivjuk meg a makePage-t

@@ -1,5 +1,6 @@
 //classra atirni prototype nelkul
 //constructoron belul uj methodust nem csinalunk, azon kivulre kell
+// class ugyanolyan objektum mint amit object constructorral csinálunk
 class Poem {
     constructor(yearFromInternet, authorFromInternet, titleFromInternet, textFromInternet) {
         this.year = yearFromInternet
@@ -33,13 +34,13 @@ const poemData = new Poem (
 )
 
 
-console.log(poemData);
+//console.log(poemData);
 
 poemData.makePage()
 
-class ForeignPoem extends Poem {
+class ForeignPoem extends Poem { //extends-el lehet kibővíteni az eredeti kulcsokat, itt a translator, A super-el átadjuk amiket már az eredeti class-ban megírtunk, így itt nem kell megint , csak az újat alá
     constructor(yearFromInternet, authorFromInternet, titleFromInternet, textFromInternet, translator) {
-        super(year, author, title, text)
+        super(yearFromInternet, authorFromInternet, titleFromInternet, textFromInternet)
         this.translator = translator
     }
     makePage() {

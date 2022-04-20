@@ -24,7 +24,7 @@ const pdyfi = poemData.yearFromInternet
 //console.log(authorFromInternet);
 
 
-function funWithPoemData({yearFromInternet2, authorFromInternet2}) {
+function funWithPoemData({yearFromInternet2, authorFromInternet2}) { // lenyegeben ugnenugy kiszedi az adatot mint a 21-es sorban
     console.log(yearFromInternet);
     console.log(authorFromInternet);
 }
@@ -51,7 +51,7 @@ console.log(elseX);
 console.log(arr[arr.length-1]);
 
 
-const [, , , ourFun] = arr
+const [, , , ourFun] = arr // arrayben levo fv-t igy tudjuk lefuttatni 
 
 ourFun()
 
